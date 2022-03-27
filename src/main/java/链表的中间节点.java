@@ -1,4 +1,4 @@
-package mian.java;
+package main.java;
 
 class 链表的中间节点 {
     public ListNode middleNode(ListNode head) {

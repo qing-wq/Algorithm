@@ -1,4 +1,4 @@
-package mian.java;
+package main.java;
 
 import java.io.OutputStream;
 import java.util.Stack;

@@ -1,4 +1,4 @@
-package mian.java;
+package main.java;
 
 
 class 移动零 {

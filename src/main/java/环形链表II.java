@@ -1,4 +1,4 @@
-package mian.java;
+package main.java;
 
 public class 环形链表II {
     public ListNode detectCycle(ListNode head) {

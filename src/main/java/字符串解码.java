@@ -1,4 +1,4 @@
-package mian.java;
+package main.java;
 
 class Solution {
     public String decodeString(String s) {

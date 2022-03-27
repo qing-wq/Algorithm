@@ -1,4 +1,4 @@
-package mian.java;
+package main.java;
 
 public class 相交链表 {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {

@@ -1,8 +1,4 @@
-package mian.java;
-
-import java.util.ArrayDeque;
-import java.util.Deque;
-import java.util.List;
+package main.java;
 
 class 链表中倒数第K个节点 {
     public ListNode getKthFromEnd(ListNode head, int k) {

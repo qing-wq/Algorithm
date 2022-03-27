@@ -1,6 +1,4 @@
-package mian.java;
-
-import java.util.HashMap;
+package main.java;
 
 class 反转链表 {
     public ListNode reverseList(ListNode head) {
