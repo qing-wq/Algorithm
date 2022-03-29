@@ -1,4 +1,4 @@
-package main.java;
+package LeetCode;
 
 class 删除链表中的重复元素 {
     public ListNode deleteDuplicates(ListNode head) {
