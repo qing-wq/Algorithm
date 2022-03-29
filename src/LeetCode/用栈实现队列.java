@@ -1,4 +1,4 @@
-package main.java;
+package LeetCode;
 
 import java.io.OutputStream;
 import java.util.Stack;

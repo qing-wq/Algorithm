@@ -1,4 +1,4 @@
-package main.java;
+package LeetCode;
 
 class 链表中倒数第K个节点 {
     public ListNode getKthFromEnd(ListNode head, int k) {
