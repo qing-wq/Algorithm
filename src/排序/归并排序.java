@@ -17,6 +17,7 @@ public class 归并排序 {
 
     private static int[] merge(int[] left, int[] right) {
         int[] res = new int[left.length + right.length];
+        // 双指针，对左右数组每个元素依次比较，较小的加入res
         for (int index = 0, i = 0, j = 0; index < res.length; index++) {
             if (i >= left.length) {
                 // 左边的数组已经被选择完
