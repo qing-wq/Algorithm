@@ -1,7 +1,5 @@
 package 排序;
 
-import com.sun.org.apache.regexp.internal.REUtil;
-
 public class 希尔排序 {
     public static int[] SortArray(int[] arr) {
         if (arr.length == 0) {
