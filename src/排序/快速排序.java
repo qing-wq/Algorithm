@@ -1,8 +1,5 @@
 package 排序;
 
-
-import java.util.Arrays;
-
 public class 快速排序 {
     // 快速排序原理：在区间中随机找一个数作为基准数，比基准数小的放在前，大的放在后，在对分区指示器两边的数进行快排
     public static int[] SortArray(int[] arr) {
