@@ -1,32 +1,41 @@
 package LeetCode.二叉树;
 
+import java.util.List;
+import java.util.SortedMap;
+import java.util.logging.Level;
+
 class ListNode {
     int val;
     ListNode next;
-    ListNode(int x) { val = x; }
+
+    ListNode(int x) {
+        val = x;
+    }
 }
 
 public class 将有序链表转换为二叉搜索树 {
     class Solution {
         public TreeNode sortedListToBST(ListNode head) {
-            ListNode p = head;
-            int[] arr = new int[20000];
-            int n = 0;
-            while (p != null) {
-                arr[n++] = p.val;
-                p = p.next;
-            }
-            return dfs(arr,0,n);
+            // 最开始的思路：将链表中的节点值保存在数组中
+//            int[] arr = new int[20000];
+            return dfs(head,null);
         }
 
-        private TreeNode dfs(int[] arr, int left, int right) {
-            if (left >= right) {
+        private TreeNode dfs(ListNode left, ListNode right) {
+            if (left == right) {
                 return null;
             }
-            int mid = left + right >> 1;
-            TreeNode root = new TreeNode(arr[mid]);
-            root.left = dfs(arr, left, mid);
-            root.right = dfs(arr, mid + 1, right);
+//            int mid = left + right >> 1;
+            // 优化：使用快慢指针找到中间节点
+            ListNode s = left;
+            ListNode f = left;
+            while (f != null && f.next != null) {
+                s = s.next;
+                f = f.next.next;
+            }
+            TreeNode root = new TreeNode(s.val);
+            root.left = dfs(left, s);
+            root.right = dfs(s, right);
             return root;
         }
     }
