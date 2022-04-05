@@ -1,7 +1,5 @@
 package LeetCode.二分;
 
-import com.sun.org.apache.regexp.internal.REUtil;
-
 public class 二分查找 {
     class Solution {
         public int search(int[] nums, int target) {
@@ -27,6 +25,7 @@ public class 二分查找 {
         public int search(int[] nums, int target) {
             this.target = target;
             int res = search(nums, 0, nums.length - 1);
+            return res;
         }
 
         private int search(int[] nums, int left, int right) {
