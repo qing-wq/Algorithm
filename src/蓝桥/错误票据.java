@@ -42,22 +42,5 @@ public class 错误票据 {
 149 138 142 146 199 126 165 156 153 193 144 166 170 121 171 132 101 194 187 188
 113 130 176 154 177 120 117 150 114 183 186 181 100 163 160 167 147 198 111 119*/
 
-//        int min = Integer.MAX_VALUE, max = Integer.MIN_VALUE;
-//        int N = Integer.MIN_VALUE;
-//        for (int i = 0; i < date.length; i++) {
-//            if(list.contains(date[i])) N = date[i];
-//            if (date[i] < min) min = date[i];
-//            if (date[i] > max) max = date[i];
-//            System.out.println(max);
-//            list.add(date[i]);
-//        }
-//        System.out.println(min + " " +max);
-//        int M = min - 1;
-//        for (int i = min; i <= max; i++) {
-//            if (!list.contains(i)) {
-//                M = i;
-//            }
-//        }
-//        System.out.println(M + " " + N);
     }
 }
