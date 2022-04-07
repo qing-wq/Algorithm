@@ -41,7 +41,6 @@ public class 带分数 {
                 int num2 = toInt(i, j);
                 int num3 = toInt(j, 9);
                 if (num2 % num3 == 0 && num1 + (num2 / num3) == n ) {
-                    System.out.println(num1 + " " + num2 + " " + num3);
                     cnt++;
                 }
             }
