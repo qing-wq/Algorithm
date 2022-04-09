@@ -6,6 +6,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.*;
 
+// BFS模板题
 public class 走迷宫 {
     static int n;
     static int m;
