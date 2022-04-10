@@ -9,14 +9,15 @@ public class 前缀和 {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int m = sc.nextInt();
-        int[] arr = new int[n];
-        int[] S = new int[n];
+        int[] arr = new int[n+1];
+        int[] S = new int[n+1];
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
+
         // 求前缀和
         S[0] = 0;
-        for (int i = 1; i < n; i++) {
+        for (int i = 1; i <= n; i++) {
             for (int j = 0; j < i; j++) {
                 S[i] += arr[j];
             }
@@ -24,7 +25,6 @@ public class 前缀和 {
         while (m > 0) {
             int l = sc.nextInt();
             int r = sc.nextInt();
-
             int res = S[r] - S[l-1];
             System.out.println(res);
             m--;
