@@ -9,18 +9,17 @@ public class 前缀和 {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int m = sc.nextInt();
-        int[] arr = new int[n+1];
+        int[] arr = new int[n];
         int[] S = new int[n+1];
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
 
         // 求前缀和
-        S[0] = 0;
+        // S[i]表示从arr[0]到arr[i-1]
+        S[0] = 0;   // 规定
         for (int i = 1; i <= n; i++) {
-            for (int j = 0; j < i; j++) {
-                S[i] += arr[j];
-            }
+            S[i] = S[i-1] + arr[i-1];
         }
         while (m > 0) {
             int l = sc.nextInt();
