@@ -1,4 +1,4 @@
-package LeetCode;
+package LeetCode.前缀和;
 
 public class 区域和检索 {
     class NumArray {
