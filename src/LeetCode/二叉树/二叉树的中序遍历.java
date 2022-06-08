@@ -1,6 +1,4 @@
-package LeetCode;
-
-import jdk.nashorn.internal.runtime.ListAdapter;
+package LeetCode.二叉树;
 
 import java.util.ArrayList;
 import java.util.List;

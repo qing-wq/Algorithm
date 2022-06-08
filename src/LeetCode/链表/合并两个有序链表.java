@@ -1,10 +1,6 @@
-package LeetCode;
+package LeetCode.链表;
 
- class ListNode {
-       int val;
-       ListNode next;
-       ListNode(int x) { val = x; }
-   }
+
 
 
 //class 合并两个有序链表 {

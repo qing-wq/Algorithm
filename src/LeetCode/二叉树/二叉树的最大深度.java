@@ -1,4 +1,4 @@
-package LeetCode;
+package LeetCode.二叉树;
 
 public class 二叉树的最大深度 {
     int maxLen;

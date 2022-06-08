@@ -1,4 +1,5 @@
-package LeetCode;
+package LeetCode.链表;
+
 
 public class 相交链表 {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {

@@ -1,3 +1,8 @@
+package LeetCode;
+
+import java.util.ArrayList;
+import java.util.List;
+
 class Solution {
     public List<String> simplifiedFractions(int n) {
         List<String> list = new ArrayList<>();

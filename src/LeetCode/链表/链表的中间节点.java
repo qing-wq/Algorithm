@@ -1,4 +1,4 @@
-package LeetCode;
+package LeetCode.链表;
 
 class 链表的中间节点 {
     public ListNode middleNode(ListNode head) {

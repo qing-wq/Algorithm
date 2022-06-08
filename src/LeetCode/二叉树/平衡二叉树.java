@@ -1,4 +1,6 @@
-package LeetCode;
+package LeetCode.二叉树;
+
+import LeetCode.二叉树.TreeNode;
 
 public class 平衡二叉树 {
     class Solution {

@@ -1,4 +1,4 @@
-package LeetCode;
+package LeetCode.链表;
 
 class 反转链表 {
     public ListNode reverseList(ListNode head) {

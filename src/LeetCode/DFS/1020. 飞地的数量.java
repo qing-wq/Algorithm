@@ -1,3 +1,5 @@
+package LeetCode.DFS;
+
 class Solution {
     public static int[][] dirs = {{-1,0},{1,0},{0,-1},{0,1}};
     public static int m;

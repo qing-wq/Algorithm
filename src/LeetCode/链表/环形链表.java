@@ -1,4 +1,5 @@
-package LeetCode;
+package LeetCode.链表;
+
 
 public class 环形链表 {
     public boolean hasCycle(ListNode head) {

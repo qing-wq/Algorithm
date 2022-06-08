@@ -1,3 +1,7 @@
+package LeetCode;
+
+import java.util.Arrays;
+
 class Solution {
     public int maxNumberOfBalloons(String text) {
         char[] letter = text.toCharArray();
