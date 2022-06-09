@@ -1,4 +1,4 @@
-package LeetCode;
+package 排序;
 
 public class 插入排序 {
     public int[] SortArray(int[] arr) {
