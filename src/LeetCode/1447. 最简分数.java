@@ -3,7 +3,7 @@ package LeetCode;
 import java.util.ArrayList;
 import java.util.List;
 
-class Solution {
+class Solution1111 {
     public List<String> simplifiedFractions(int n) {
         List<String> list = new ArrayList<>();
         for (int i = 2; i <= n; i++) {

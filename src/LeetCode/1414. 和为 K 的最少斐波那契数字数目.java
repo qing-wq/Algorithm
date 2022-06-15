@@ -1,4 +1,9 @@
-class Solution {
+package LeetCode;
+
+import java.util.ArrayList;
+import java.util.List;
+
+class Solutionaaa {
     static List<Integer> list = new ArrayList<>();
     public int findMinFibonacciNumbers(int k) {
         list.add(1);

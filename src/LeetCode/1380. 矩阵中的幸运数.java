@@ -1,4 +1,9 @@
-class Solution {
+package LeetCode;
+
+import java.util.ArrayList;
+import java.util.List;
+
+class Solutionddd {
     static int  m,n;
     static int[][] mat;
     public List<Integer> luckyNumbers (int[][] matrix) {

@@ -1,4 +1,8 @@
-class Solution {
+package LeetCode;
+
+import java.util.Arrays;
+
+class Solutionwww {
     public int minimumDifference(int[] nums, int k) {
         int n = nums.length;
         Arrays.sort(nums);
