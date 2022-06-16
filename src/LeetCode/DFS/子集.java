@@ -2,14 +2,11 @@ package LeetCode.DFS;
 
 import com.sun.xml.internal.messaging.saaj.soap.name.NameImpl;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class 子集 {
     public static void main(String[] args) {
-        System.out.println(new Solution2().subsets(new int[]{1,2,3}));
+        System.out.println(new Solution3().subsets(new int[]{1,2,3}));
     }
 
     static class Solution {
@@ -55,6 +52,27 @@ public class 子集 {
             }
             dfs(u + 1, status);
             dfs(u + 1, status | 1 << u);
+        }
+    }
+
+    // labuladong
+    static class Solution3{
+        List<List<Integer>> res = new LinkedList<>();
+        LinkedList<Integer> track = new LinkedList<>();  // 记录递归的路径
+        public List<List<Integer>> subsets(int[] nums) {
+            dfs(nums, 0);
+            return res;
+        }
+
+        private void dfs(int[] nums, int start) {
+            // 前序位置，每个节点都是子集
+            res.add(new LinkedList<>(track));
+
+            for (int i = start; i < nums.length; i++) {
+                track.addLast(nums[i]);
+                dfs(nums,i+1);
+                track.removeLast();
+            }
         }
     }
 }
